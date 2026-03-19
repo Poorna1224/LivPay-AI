@@ -12,7 +12,7 @@ Unlike traditional insurance, LivPay AI automatically detects disruptions and tr
 
 ## Demo Video  
 Watch the 2-minute demo here:  
-https://your-video-link-here  
+https://youtu.be/qyulRWHtr7U
 
 ---
 
