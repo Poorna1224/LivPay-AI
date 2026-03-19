@@ -1,22 +1,20 @@
-# LivPay AI  
+LivPay AI  
 Predictive Income Protection System for Gig Workers  
 
----
 
-## Overview  
+Overview  
 LivPay AI is an AI-powered parametric income protection platform designed for gig delivery workers. It protects workers from income loss caused by external disruptions such as heavy rain, extreme heat, pollution, and local restrictions.
 
 Unlike traditional insurance, LivPay AI automatically detects disruptions and triggers instant payouts without requiring manual claims.
 
----
 
-## Demo Video  
+Demo Video  
 Watch the 2-minute demo here:  
 https://youtu.be/qyulRWHtr7U
 
----
 
-## Problem Statement  
+Problem Statement  
+
 Gig workers rely on daily earnings and face income instability due to unpredictable external disruptions.
 
 Key challenges include:
@@ -25,9 +23,7 @@ Key challenges include:
 - Difficulty in verifying claims at scale  
 - Risk of fraud in automated systems  
 
----
-
-## Target Persona  
+Target Persona  
 
 Example: Delivery Partner  
 - Platform: Swiggy / Zomato  
@@ -36,9 +32,8 @@ Example: Delivery Partner
 
 These workers face income loss during disruptions such as rain, pollution, or curfews.
 
----
 
-## Workflow  
+Workflow  
 
 1. Worker registers on the platform  
 2. System collects location and earnings data  
@@ -49,9 +44,8 @@ These workers face income loss during disruptions such as rain, pollution, or cu
 7. Income loss is calculated  
 8. Instant payout is processed  
 
----
 
-## Weekly Premium Model  
+Weekly Premium Model  
 
 | Risk Level | Weekly Premium | Coverage |
 |------------|----------------|----------|
@@ -61,9 +55,8 @@ These workers face income loss during disruptions such as rain, pollution, or cu
 
 Premiums are dynamically adjusted based on risk and worker activity.
 
----
 
-## Parametric Triggers  
+Parametric Triggers  
 
 | Event       | Trigger Condition        |
 |------------|--------------------------|
@@ -74,9 +67,8 @@ Premiums are dynamically adjusted based on risk and worker activity.
 
 Payouts are triggered automatically without manual claims.
 
----
 
-## AI/ML Integration  
+AI/ML Integration  
 
 Risk Prediction  
 - Predicts disruption probability  
@@ -93,9 +85,9 @@ Anomaly Detection
 Predictive Alerts  
 - Notifies users of upcoming disruptions  
 
----
 
-## Adversarial Defense and Anti-Spoofing Strategy  
+
+Adversarial Defense and Anti-Spoofing Strategy  
 
 Differentiation  
 - Uses behavioral patterns and delivery history  
@@ -115,17 +107,15 @@ User Experience Balance
 - Suspicious claims are flagged for review  
 - Genuine users are not penalized immediately  
 
----
 
-## System Architecture  
+System Architecture  
 
 User Application → Data Collection → AI Risk Engine →  
 Environmental Monitoring → Trigger Engine →  
 Fraud Detection → Payout Engine → Dashboard  
 
----
 
-## Technology Stack  
+Technology Stack  
 
 Frontend  
 - React or Flutter  
@@ -145,9 +135,8 @@ APIs
 - AQI APIs  
 - Location Services  
 
----
 
-## Development Plan  
+Development Plan  
 
 Phase 1  
 - Research and system design  
@@ -161,18 +150,15 @@ Phase 3
 - Fraud detection implementation  
 - Dashboard and optimization  
 
----
-
-## Expected Impact  
+Expected Impact
 
 - Provides financial stability for gig workers  
 - Enables automated and instant payouts  
 - Reduces fraud risks  
 - Scales across different cities  
 
----
 
-## Future Scope  
+Future Scope  
 
 - Integration with delivery platforms  
 - Advanced AI-based risk modeling  
@@ -180,7 +166,7 @@ Phase 3
 - Expansion to larger regions  
 
 
-## Team  
+Team  
 
 Team Name: TheResolvers  
 
