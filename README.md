@@ -50,9 +50,9 @@ Outputs include:
 
 ## System Architecture
 Architecture documentation is available here:
-- [System Architecture Diagram](c:/Users/HP/Desktop/livpay-ai/docs/architecture/system-architecture-diagram.md)
-- [Database Schema Diagram](c:/Users/HP/Desktop/livpay-ai/docs/architecture/database-schema-diagram.md)
-- [AI Model Workflow Diagram](c:/Users/HP/Desktop/livpay-ai/docs/architecture/ai-model-workflow-diagram.md)
+- `docs/architecture/system-architecture-diagram.md`
+- `docs/architecture/database-schema-diagram.md`
+- `docs/architecture/ai-model-workflow-diagram.md`
 
 High-level flow:
 - Frontend React application sends requests to FastAPI backend
@@ -81,15 +81,11 @@ Additional implementation entities currently present in the repo:
 - Notifications
 - Insurance Info
 
-See the full ER diagram in [database-schema-diagram.md](c:/Users/HP/Desktop/livpay-ai/docs/architecture/database-schema-diagram.md).
-
 ## AI Model Details
-- Dataset generator: [generate_dataset.py](c:/Users/HP/Desktop/livpay-ai/ml/scripts/generate_dataset.py)
-- Model training script: [train_model.py](c:/Users/HP/Desktop/livpay-ai/ml/scripts/train_model.py)
-- Saved model: [income_loss_model.pkl](c:/Users/HP/Desktop/livpay-ai/ml/models/income_loss_model.pkl)
-- Backend predictor service: [ai_predictor_service.py](c:/Users/HP/Desktop/livpay-ai/backend/app/services/ai_predictor_service.py)
-
-The current implementation uses a saved `.pkl` model and exposes AI prediction endpoints through FastAPI.
+- Dataset generator: `ml/scripts/generate_dataset.py`
+- Model training script: `ml/scripts/train_model.py`
+- Saved model: `ml/models/income_loss_model.pkl`
+- Backend predictor service: `backend/app/services/ai_predictor_service.py`
 
 ## API Endpoints
 
@@ -97,6 +93,7 @@ The current implementation uses a saved `.pkl` model and exposes AI prediction e
 - `POST /auth/register`
 - `POST /auth/login`
 - `POST /auth/admin/login`
+- `POST /auth/admin/access`
 - `GET /auth/me`
 
 ### Policies
@@ -133,35 +130,6 @@ The current implementation uses a saved `.pkl` model and exposes AI prediction e
 ## Workflow
 User -> Policy -> Premium -> Trigger -> Claim -> Fraud -> Payout
 
-Detailed journey:
-1. Worker registers on the platform
-2. Premium engine calculates weekly premium based on risk
-3. Worker creates a protection policy
-4. Trigger detection engine checks disruption signals
-5. Trigger is recorded for affected worker or zone
-6. Claim is created from the trigger
-7. Fraud engine evaluates suspicious behavior
-8. Safe claims proceed to payout engine
-9. Admin dashboard monitors the full process
-
-## Screenshots
-Add your product screenshots inside [docs/screenshots](c:/Users/HP/Desktop/livpay-ai/docs/screenshots).
-
-Suggested screenshots:
-- Landing page
-- Worker registration
-- Worker dashboard
-- Policy page
-- Claims page
-- Admin dashboard
-
-## Installation Steps
-
-### Prerequisites
-- Node.js 18+
-- Python 3.10+
-- pip
-
 ## How to Run Backend
 
 ```powershell
@@ -172,7 +140,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Backend default URL:
+Backend URL:
 
 ```text
 http://127.0.0.1:8000
@@ -186,39 +154,10 @@ npm install
 npm run dev
 ```
 
-Frontend default URL:
+Frontend URL:
 
 ```text
 http://127.0.0.1:5173
-```
-
-## Project Structure
-
-```text
-livpay-ai/
-├── backend/
-│   ├── app/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── schemas/
-│   │   ├── services/
-│   │   ├── auth.py
-│   │   ├── config.py
-│   │   ├── database.py
-│   │   └── main.py
-├── frontend/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       └── services/
-├── ml/
-│   ├── data/
-│   ├── models/
-│   └── scripts/
-└── docs/
-    ├── architecture/
-    ├── demo/
-    └── screenshots/
 ```
 
 ## Future Improvements

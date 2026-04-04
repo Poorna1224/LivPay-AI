@@ -1,7 +1,36 @@
-node_modules/
-package-lock.json
-*.pyc
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+
+# Environment files
 .env
+backend/.env
+frontend/.env
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+dist/
+build/
+frontend/dist/
+package-lock.json
+frontend/package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local oddities on Windows
 nul
-node_modules
+frontend/nul
