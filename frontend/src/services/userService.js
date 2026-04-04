@@ -1,17 +1,17 @@
 import api from "./api";
 
 export const registerUser = async (userData) => {
-  const response = await api.post("/auth/register", userData);
+  const response = await api.post("/api/register/worker", userData);
   return response.data;
 };
 
 export const loginUser = async (phone, password) => {
-  const response = await api.post("/auth/login", { phone, password });
+  const response = await api.post("/api/login/worker", { phone, password });
   return response.data;
 };
 
 export const loginAdmin = async (phone, admin_pin) => {
-  const response = await api.post("/auth/admin/login", { phone, admin_pin });
+  const response = await api.post("/api/login/admin", { phone, admin_pin });
   return response.data;
 };
 

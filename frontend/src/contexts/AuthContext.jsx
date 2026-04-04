@@ -61,10 +61,10 @@ export function AuthProvider({ children }) {
 
   const register = async (userData) => {
     const response = await registerUser(userData);
-    localStorage.setItem("access_token", response.access_token);
-    localStorage.setItem("user", JSON.stringify(response.user));
-    localStorage.setItem("selected_worker", JSON.stringify(response.user));
-    setUser(response.user);
+    localStorage.removeItem("access_token");
+    localStorage.setItem("user", JSON.stringify(response));
+    localStorage.setItem("selected_worker", JSON.stringify(response));
+    setUser(response);
     return response;
   };
 
